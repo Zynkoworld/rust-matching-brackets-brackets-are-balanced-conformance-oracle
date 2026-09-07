@@ -1,0 +1,16 @@
+{"input": "[]", "expect": true, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "", "expect": true, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "[[", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "}{", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "{ }", "expect": true, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "{[])", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "{[]}", "expect": true, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "{}[]", "expect": true, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "{[)][]}", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "([{])", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "[({]})", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "[({}])", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "[]]", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": ")()", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "{)()", "expect": false, "raised": false, "task": "matching-brackets", "lang": "rust"}
+{"input": "(((185 + 223.85) * 15) - 543)/2", "expect": true, "raised": false, "task": "matching-brackets", "lang": "rust"}
