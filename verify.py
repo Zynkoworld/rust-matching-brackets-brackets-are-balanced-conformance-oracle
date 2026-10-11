@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """verify.py -- CI gate. Ujrafuttatja a rust referenciat a kanonikus korpuszon, es exit 0 IFF minden
 eset egyezik ES a korpusz nem degeneralt. A kimenet a publish-kapu (compute-oracle) szerzodese: utolso
-sor "ZOLD". Nincs recall/FP: konformancia-korpuszon az hamis metrika volna.
+sor "GREEN". Nincs recall/FP: konformancia-korpuszon az hamis metrika volna.
 FUGGOSEG: rust futtato a PATH-on (a bundle kodja nem python). Ha nincs, a gate NEM-MERT-tel bukik --
 az nem "eltores", hanem "nem tudtam megnezni", es a kimenet kimondja."""
 import json
@@ -63,7 +63,7 @@ def main():
           % (len(probes), agree, disagree))
     if disagree:
         return 1
-    print("ZOLD")
+    print("GREEN")
     return 0
 
 
